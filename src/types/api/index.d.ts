@@ -1,5 +1,3 @@
-import { Response } from "express";
-
 declare module "api" {
   export interface ResponseBody {
     status: boolean;
@@ -7,5 +5,6 @@ declare module "api" {
     data: Record<string, unknown> | Record<string, unknown>[];
   }
 
-  export type APIResponse = Response<ResponseBody>;
+  import { Response as ER } from "express";
+  export type Response = ER<ResponseBody>;
 }
