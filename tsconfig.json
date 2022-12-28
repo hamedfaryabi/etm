@@ -10,10 +10,11 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
-      "@api/*": ["src/apis/*"]
+      "@routes/*": ["src/routes/*"],
+      "@models/*": ["src/app/models/*"],
+      "@helpers/*": ["src/helpers/*"]
     },
     "typeRoots": ["node_modules/@types", "types"],
-    // "resolveJsonModule": true,
     "outDir": "./dist",
     "removeComments": true,
     "esModuleInterop": true,
