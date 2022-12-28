@@ -7,7 +7,6 @@ type SchemaType =
   | { [path: string]: mongoose.SchemaDefinitionProperty<undefined> }
   | { [x: string]: mongoose.SchemaDefinitionProperty<any> | undefined };
 
-// record
 abstract class Model<T extends mongoose.AnyObject> {
   private model: MongooseModel<T>;
 
