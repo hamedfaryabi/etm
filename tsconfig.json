@@ -12,7 +12,9 @@
       "@/*": ["src/*"],
       "@routes/*": ["src/routes/*"],
       "@models/*": ["src/app/models/*"],
-      "@helpers/*": ["src/helpers/*"]
+      "@helpers/*": ["src/helpers/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@middlewares/*": ["src/middlewares/*"]
     },
     "typeRoots": ["node_modules/@types", "types"],
     "outDir": "./dist",
